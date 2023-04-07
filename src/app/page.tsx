@@ -1,5 +1,5 @@
-import Link from "next/link"
-import wallet from "./wallet/page"
+import Link from 'next/link'
+import wallet from './wallet/page'
 
 export default function Home() {
   return (
