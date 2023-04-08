@@ -19,7 +19,7 @@ export default function Wallet() {
 
     return (
         <form onSubmit={(e: React.FormEvent<HTMLFormElement>): void => e.preventDefault()} className='flex flex-col space-y-5 justify-center items-center w-screen h-screen text-center bg-black'>
-            <button className='text-white font-bold rounded-md border-2 mx-auto h-10 w-40 hover:ease-in-out duration-300 hover:shadow-green-500/50 hover:border-emerald-400/100 hover:border-2 hover:shadow-lg' onClick={createAccount}>Criar conta</button>
+            <button className='text-white font-bold rounded-md border-2 mx-auto h-10 w-40 hover:ease-in-out duration-300 hover:shadow-green-500/50 hover:border-emerald-400/100 hover:border-2 hover:shadow-lg' onClick={createAccount}>Gerar carteira</button>
             <div>{display}</div>
         </form>)
 }
