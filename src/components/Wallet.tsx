@@ -19,7 +19,9 @@ export default function Wallet() {
     }
 
     const getBalance = () => {
-        web3.eth.getBalance((localStorage.getItem('wallet')) as string).then(value => console.log(value))
+        web3.eth.getBalance((localStorage.getItem('wallet')) as string).then(value => setBalance(
+            <p className='text-white font-bold font-mono'>{value}</p>
+        ))
     }
 
     return (
