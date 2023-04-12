@@ -51,6 +51,4 @@ npm run dev
 
 <h2 align="center">Important notes/issues</h2>
 
-* The date is not sorted;
-
-* responsive is not ok for some markdown posts.
+* Nothing reported
