@@ -10,8 +10,8 @@ export default function Wallet() {
         if (localStorage.getItem('wallet') && localStorage.getItem('privKey')) {
             return (
                 <div className='space-y-0'>
-                    <p className='font-extrabold text-green-400'>Carteira: <span className='text-white font-semibold'>{localStorage.getItem('wallet')}</span></p>
-                    <p className='font-extrabold text-green-400'>Chave privada: <span className='text-white font-semibold'>{localStorage.getItem('privKey')}</span></p>
+                    <p className='font-extrabold text-green-400'>Carteira: <span className='text-white font-semibold break-all'>{localStorage.getItem('wallet')}</span></p>
+                    <p className='font-extrabold text-green-400'>Chave privada: <span className='text-white font-semibold break-all'>{localStorage.getItem('privKey')}</span></p>
                 </div>)
         } else {
             return (<></>)
