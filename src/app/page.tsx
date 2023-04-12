@@ -5,7 +5,7 @@ import { twMerge } from 'tailwind-merge'
 import { pageStyle, linkStyle, spanText, text } from './styles'
 
 export default function Home() {
-  
+   const TextEth = () => {return <h1 className={text}><span className={twMerge(spanText, 'fadein')}>Ethereum Wallet: personal, pratice and private</span></h1>}
   const [visibleText, setVisibleText] = useState(false)
   const [visibleButton, setVisibleButton] = useState(false)
   const renderText = () => { return visibleText && TextEth() }
@@ -21,5 +21,3 @@ export default function Home() {
     </div>
   )
 }
-
-export const TextEth = () => {return <h1 className={text}><span className={twMerge(spanText, 'fadein')}>Ethereum Wallet: personal, pratice and private</span></h1>}
